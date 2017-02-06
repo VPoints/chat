@@ -11,27 +11,7 @@ var onlineHome = {
 		
 	}
 }
-/* *
- * 关于 socket 的 api
- * 
- * 1. io = require('socket.io') 这样把这个引用进来  需要将他附着在 http 请求上
- * 1.1  创建 server ： var server = require('http').Server(app);
- * 1.2  将io 附加上 server : var socketIO = io(server);
- * 1.3  生成端口连接  ： server.listen(3000,fn)
- * 
- * 2. 操作 socketIO：
- * 
- * 2.1 IO的连接 : socketIO.on('connection',function(socket){		这个里面操作回调		}); 这样就进行了连接操作
- * 2.2 IO的API很少 ： 一般都是处于自定义代码 
- * 		请求：socket.on('自定义接口'，函数处理（接收数据）)；
- * 		响应：socket.emit('自定义接口',需要返还的json)； 
- * 
- * 2.3 分房间 有 4 个方法：
- * 		socketIO.join('房间名称'); 加入房间
- * 		socket.leave('房间名称'); 离开房间
- * 		socketIO.to('房间名称').emit('自定义接口',需要返还的json);
- * 
- * */
+
 function test(io){
 	io.on('connection', function(socket){
 		// 这个是 socket 请求地址的页面连接  可以用于房间区别  在我这里不通过这种方法
