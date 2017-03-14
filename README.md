@@ -7,4 +7,5 @@ npm install
 node app.js
 
 ```
+ 会持续更新，只能在业余时间做所以更新得比较慢，下一个问题是头像问题
  聊天室在线查看地址 http://www.fetchs.cn
