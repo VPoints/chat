@@ -1,0 +1,47 @@
+/*
+ 	bg样式
+ 	
+ * */
+.bg,.mainBg{
+	background-image:url(../images/kiana.jpg);
+}
+
+.menuSlider {
+    background: rgba(102,51,153,.4);
+}
+.user{
+	border-bottom: 1px solid #D5D5D5;
+}
+.home:hover,.myhome,header{
+	background: hsla(0,0%,100%,.5);
+}
+
+.footer{
+	background: hsla(0,0%,100%,.5);
+}
+.sys .msg_box{
+	background: rgba(0,0,0,.13);
+}
+.msgHead,.userHead,.homeHead{
+	background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 1px #D5D5D5;
+}
+/*
+ 
+ 	color 样式
+ 
+ * */
+.sys .msg_box{
+	color: #666;
+}
+.menuSlider{
+	color: #fff;
+}
+.msgData h3{
+	color: #fff;
+}
+
+header{
+	color: rgba(0,0,0,.4);
+}

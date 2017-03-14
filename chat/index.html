@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>chatrs</title>
+    <link rel="stylesheet" type="text/css" href="public.css"/>
+    <link rel="stylesheet" type="text/css" href="skin.css"/>
+    <link rel="stylesheet" type="text/css" href="animate.css"/>
+    <!--<script src="src/socket.io.js" type="text/javascript" charset="utf-8"></script>-->
+    <link rel="icon" href='src/assets/kiana.jpg' type='image/x-icon'>
+  </head>
+  <body>
+  	<div class="bg">
+  		<div class="mainBg"></div>
+  	</div>
+    <div id="app">
+    	 <transition :name="transitionName">  
+            <router-view :transitionName='test'></router-view>  
+        </transition> 
+    </div>
+    <script src="/dist/build.js"></script>
+  </body>
+</html>
